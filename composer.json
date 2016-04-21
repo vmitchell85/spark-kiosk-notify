@@ -1,0 +1,13 @@
+{
+    "name": "vmitchell85/SparkKioskNotify",
+    "description": "Create user notifications from your kiosk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vince Mitchell",
+            "email": "vincent.mitchell@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
