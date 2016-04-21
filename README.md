@@ -31,7 +31,7 @@ Place a link to the notifications settings tab:
 ```html
 <!-- Notifications Link -->
 <li role="presentation">
-    <a href="#notifications" aria-controls="api" role="tab" data-toggle="tab">
+    <a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab">
         <i class="fa fa-fw fa-btn fa-bell"></i>Notifications
     </a>
 </li>
