@@ -1,8 +1,14 @@
-## DO NOT USE - NOT FUNCTIONAL YET
-
 # Spark Kiosk Notify
 
 Adds a notification panel to your Laravel Spark Kiosk, allowing you to send notifications to users.
+
+## Planned / Desired Features
+
+- View notifications
+- Update notifications
+- Delete notifications
+- Send Notification on User's tab
+
 
 ## Installation process
 
