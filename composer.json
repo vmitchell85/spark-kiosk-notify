@@ -2,12 +2,24 @@
     "name": "vmitchell85/spark-kiosk-notify",
     "description": "Create user notifications from your kiosk",
     "license": "MIT",
+    "keywords" : [
+        "spark",
+        "kiosk",
+        "laravel",
+        "notifications"
+    ],
     "authors": [
         {
             "name": "Vince Mitchell",
             "email": "vincent.mitchell@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "homepage" : "https://github.com/vmitchell85/spark-kiosk-notify",
+    "version": "1.0",
+    "require": {},
+    "autoload": {
+        "psr-4" : {
+            "vmitchell85\\SparkKioskNotify\\" : "src/"
+        }
+    }
 }
