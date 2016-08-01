@@ -15,7 +15,7 @@
                     <label class="col-md-4 control-label">User</label>
 
                     <div class="col-md-6">
-                        <select class="form-control" name="user_id" v-model="createNotification.user_id">
+                        <select class="form-control" name="user_id" v-model="newNotification.user_id">
                             <option value="">Choose User...</option>
                             <option value="@{{ usr.id }}" v-for="usr in users">@{{ usr.name }}</option>
                         </select>
@@ -27,7 +27,7 @@
                     <label class="col-md-4 control-label">Notification</label>
 
                     <div class="col-md-6">
-                        <textarea class="form-control" name="notification"  v-model="createNotification.body" rows="7" style="font-family: monospace;">
+                        <textarea class="form-control" name="notification"  v-model="newNotification.body" rows="7" style="font-family: monospace;">
                         </textarea>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <label class="col-md-4 control-label">Action Button Text</label>
 
                     <div class="col-md-6">
-                        <input type="text" class="form-control" name="action_text"  v-model="createNotification.action_text">
+                        <input type="text" class="form-control" name="action_text"  v-model="newNotification.action_text">
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <label class="col-md-4 control-label">Action Button URL</label>
 
                     <div class="col-md-6">
-                        <input type="text" class="form-control" name="action_url"  v-model="createNotification.action_url">
+                        <input type="text" class="form-control" name="action_url"  v-model="newNotification.action_url">
                     </div>
                 </div>
 
