@@ -16,6 +16,7 @@
     ],
     "homepage" : "https://github.com/vmitchell85/spark-kiosk-notify",
     "version": "1.0.0",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4" : {
