@@ -62,7 +62,7 @@
         </div>
     </div>
     <!-- Recent Notifications List -->
-        <div class="panel panel-default" v-if="notifications.length > 0">
+        <div class="panel panel-default" v-cloak>
             <div class="panel-heading">Recent Notifications</div>
 
             <div class="panel-body">
@@ -78,7 +78,7 @@
                         <tr v-for="notification in notifications">
                             <!-- Photo -->
                             <td>
-                                <img :src="notification.creator.photo_url" class="spark-profile-photo">
+                                <img v-if="notification.creator" :src="notification.creator.photo_url" class="spark-profile-photo">
                             </td>
 
                             <!-- Date -->
