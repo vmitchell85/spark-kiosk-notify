@@ -14,25 +14,29 @@ Adds a notification panel to your Laravel Spark Kiosk, allowing you to send noti
 
 This package comes with predefined views and routes to use with your existing Spark installation.
 
-In order to install into your Spark application:
+In order to install the Spark Kiosk Notifications Package into your Spark application:
 
-**1. Add the following to providers array in `config\app.php`**
+**1. Add this composer package to your composer.json using the command below**
+
+`composer require vmitchell85/spark-kiosk-notify`
+
+**2. Add the following to providers array in `config\app.php`**
 
 `vmitchell85\SparkKioskNotify\SparkKioskNotifyServiceProvider::class,`
 
-**2. Publish the Spark resources (views, VueJS components):**
+**3. Publish the Spark resources (views, VueJS components):**
 
 `php artisan vendor:publish --provider="vmitchell85\SparkKioskNotify\SparkKioskNotifyServiceProvider"`
 
-**3. Add the javascript components to your bootstrap.js file**
+**4. Add the javascript components to your bootstrap.js file**
 
 Add `require('./SparkKioskNotify/notifications.js');` to your `resources/assets/js/components/bootstrap.js` file.
 
-**4. Compile the Javascript components**
+**5. Compile the Javascript components**
 
 `gulp`
 
-**5. Add the HTML snippets**
+**6. Add the HTML snippets**
 
 File: `resources/views/vendor/spark/kiosk.blade.php`
 
@@ -55,7 +59,7 @@ Inside the `<!-- Tab Panels -->` section, place the code to load the notificatio
 </div>
 ```
 
-**6. Try it out**
+**7. Try it out**
 
 Log into your Spark application and access the new notifications tab located at:
 
