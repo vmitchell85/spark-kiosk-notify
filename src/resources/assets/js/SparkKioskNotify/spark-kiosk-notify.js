@@ -1,9 +1,13 @@
 Vue.component('spark-kiosk-notify', {
     props: [
-        'notifications',
-        'users',
-        'createNotification'
     ],
+    data: {
+        'notifications': []
+        'users': []
+        'createNotification': {
+            "user_id": null
+        }
+    }
     ready(){
         this.getNotifications();
         this.getUsers();
