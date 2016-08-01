@@ -8,7 +8,9 @@ Adds a notification panel to your Laravel Spark Kiosk, allowing you to send noti
 - Update notifications
 - Delete notifications
 - Send Notification on User's tab
-
+- Select Multiple Users
+- Search for users instead of listing? Listing all could be an issue if you have many users.
+- Switch to SparkForm?
 
 ## Installation process
 
