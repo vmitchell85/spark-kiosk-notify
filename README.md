@@ -16,19 +16,23 @@ This package comes with predefined views and routes to use with your existing Sp
 
 In order to install into your Spark application:
 
-**1. Publish the Spark resources (views, VueJS components):**
+**1. Add the following to providers array in `config\app.php`**
+
+`vmitchell85\SparkKioskNotify\SparkKioskNotifyServiceProvider::class,`
+
+**2. Publish the Spark resources (views, VueJS components):**
 
 `php artisan vendor:publish --provider="vmitchell85\SparkKioskNotify\SparkKioskNotifyServiceProvider"`
 
-**2. Add the javascript components to your bootstrap.js file**
+**3. Add the javascript components to your bootstrap.js file**
 
 Add `require('./SparkKioskNotify/notifications.js');` to your `resources/assets/js/components/bootstrap.js` file.
 
-**3. Compile the Javascript components**
+**4. Compile the Javascript components**
 
 `gulp`
 
-**4. Add the HTML snippets**
+**5. Add the HTML snippets**
 
 File: `resources/views/vendor/spark/kiosk.blade.php`
 
@@ -51,7 +55,7 @@ Inside the `<!-- Tab Panels -->` section, place the code to load the notificatio
 </div>
 ```
 
-**5. Try it out**
+**6. Try it out**
 
 Log into your Spark application and access the new notifications tab located at:
 
