@@ -30,7 +30,7 @@ In order to install the Spark Kiosk Notifications Package into your Spark applic
 
 **4. Add the javascript components to your bootstrap.js file**
 
-Add `require('./SparkKioskNotify/notifications.js');` to your `resources/assets/js/components/bootstrap.js` file.
+Add `require('./SparkKioskNotify/spark-kiosk-notify.js');` to your `resources/assets/js/components/bootstrap.js` file.
 
 **5. Compile the Javascript components**
 
