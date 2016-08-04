@@ -65,4 +65,4 @@ Inside the `<!-- Tab Panels -->` section, place the code to load the notificatio
 
 Log into your Spark application and access the new notifications tab located at:
 
-`http://your-spark.url/settings#/notifications`
+`http://your-spark.url/spark/kiosk#/notifications`
