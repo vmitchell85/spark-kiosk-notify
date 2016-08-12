@@ -1,5 +1,7 @@
 # Spark Kiosk Notify
 
+# DO NOT USE - MAJOR SECURITY ISSUE FOUND
+
 Adds a notification panel to your Laravel Spark Kiosk, allowing you to send notifications to users.
 
 ## Planned / Desired Features
