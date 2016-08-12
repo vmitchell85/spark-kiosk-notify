@@ -39,9 +39,9 @@ Vue.component('spark-kiosk-notify', {
          * Create Notification.
          */
         createNotification: function(){
-            this.$http.get('/skn/notifications/create', this.createNotification)
+            this.$http.post('/skn/notifications/create', this.newNotification)
                 .then(response => {
-                    this.createNotification = {};
+                    this.newNotification = {};
                     this.getNotifications();
                 });
         }
