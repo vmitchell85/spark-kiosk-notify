@@ -5,7 +5,7 @@ Route::group(['middleware' => 'web'], function($router) {
         return \Laravel\Spark\Notification::with('creator')->with('user')->orderBy('created_at', 'desc')->get();
     });
 
-    $router->get('/skn/notifications/create', function(Illuminate\Http\Request $request){
+    $router->post('/skn/notifications/create', function(Illuminate\Http\Request $request){
 
         $new_notification = new \Laravel\Spark\Notification;
 
