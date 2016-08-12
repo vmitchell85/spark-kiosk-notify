@@ -57,7 +57,7 @@ Inside the `<!-- Tab Panels -->` section, place the code to load the notificatio
 
 ```html
 <div role="tabpanel" class="tab-pane" id="notifications">
-    @include('spark-notify::notifications')
+    @include('spark-kiosk-notify::notifications')
 </div>
 ```
 
