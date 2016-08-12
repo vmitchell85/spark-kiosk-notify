@@ -1,7 +1,5 @@
 # Spark Kiosk Notify
 
-# DO NOT USE - MAJOR SECURITY ISSUE FOUND
-
 Adds a notification panel to your Laravel Spark Kiosk, allowing you to send notifications to users.
 
 ## Planned / Desired Features
@@ -58,6 +56,7 @@ Place a link to the notifications settings tab:
 Inside the `<!-- Tab Panels -->` section, place the code to load the notifications tab:
 
 ```html
+<!-- Notifications -->
 <div role="tabpanel" class="tab-pane" id="notifications">
     @include('spark-kiosk-notify::notifications')
 </div>
