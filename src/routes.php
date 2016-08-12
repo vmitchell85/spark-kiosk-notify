@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'web'], function($router) {
+Route::group(['middleware' => ['web', 'dev']], function($router) {
     $router->get('/skn/notifications', function(){
         return \Laravel\Spark\Notification::with('creator')->with('user')->orderBy('created_at', 'desc')->get();
     });
