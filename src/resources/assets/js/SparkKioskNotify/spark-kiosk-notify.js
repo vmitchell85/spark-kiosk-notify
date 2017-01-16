@@ -10,7 +10,7 @@ Vue.component('spark-kiosk-notify', {
             }
         };
     },
-    ready(){
+    mounted(){
         this.getNotifications();
         this.getUsers();
     },

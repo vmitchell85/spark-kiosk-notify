@@ -17,7 +17,7 @@
                     <div class="col-md-6">
                         <select class="form-control" name="user_id" v-model="newNotification.user_id">
                             <option value="">Choose User...</option>
-                            <option value="@{{ usr.id }}" v-for="usr in users">@{{ usr.name }}</option>
+                            <option v-for="usr in users" :value="usr.id">@{{ usr.name }}</option>
                         </select>
                     </div>
                 </div>
