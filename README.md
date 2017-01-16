@@ -2,6 +2,9 @@
 
 Adds a notification panel to your Laravel Spark Kiosk, allowing you to send notifications to users.
 
+## Vue 1.x
+If you are using Vue 1.x please use the 1.0.5 release. The 2.x release is updated for Vue 2.x
+
 ## Planned / Desired Features
 
 - View notifications
