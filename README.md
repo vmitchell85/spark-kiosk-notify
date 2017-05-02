@@ -2,6 +2,13 @@
 
 Adds a notification panel to your Laravel Spark Kiosk, allowing you to send notifications to users.
 
+## Spark 4.x
+Spark 4.0 replaced vue-resource for axios. The 2.1 release has been updated to use axios.
+
+If you are upgrading to Spark 4.0 you will need to remove the spark-kiosk-notify.js file and republish the resources.
+
+Please note the path was updated as well.
+
 ## Vue 1.x
 If you are using Vue 1.x please use the 1.0.5 release. The 2.x release is updated for Vue 2.x
 
@@ -35,11 +42,11 @@ In order to install the Spark Kiosk Notifications Package into your Spark applic
 
 **4. Add the javascript components to your bootstrap.js file**
 
-Add `require('./SparkKioskNotify/spark-kiosk-notify.js');` to your `resources/assets/js/components/bootstrap.js` file.
+Add `require('./components/SparkKioskNotify/spark-kiosk-notify');` to your `resources/assets/js/components/app.js` file.
 
 **5. Compile the Javascript components**
 
-`gulp`
+`npm run dev`
 
 **6. Add the HTML snippets**
 
